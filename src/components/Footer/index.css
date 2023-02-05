@@ -1,0 +1,18 @@
+div#footer {
+  position: relative;
+  width: 70%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+div#footer span {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+}

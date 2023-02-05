@@ -1,0 +1,35 @@
+div#header {
+  position: relative;
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+span#title {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 600;
+  color: #444;
+}
+
+div#add-product {
+  position: relative;
+  background-color: #00ff99;
+  width: 100px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 5px auto 0px auto;
+}
+
+span#add-product-text {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+}

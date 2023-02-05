@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import { getLocalStorage } from "./utils/functions";
+import { getProducts } from "./utils/functions";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+  const [state, setState] = useState(
+    getLocalStorage({ page: "home", product: 0 })
   );
-}
+  //
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    getProducts(setProducts);
+  }, []);
+  //
+  return (
+    <Router basename="/ecommerce">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              products={products}
+              setProducts={setProducts}
+              state={state}
+              setState={setState}
+            />
+          }
+        />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;

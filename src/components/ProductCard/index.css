@@ -1,0 +1,266 @@
+div#product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  justify-content: center;
+}
+
+div#product-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 0px #ccc;
+  border-radius: 20px;
+}
+
+div#product-card-img {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  max-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10px 10px 10px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+div#product-card-img img {
+  position: relative;
+  width: 280px;
+  max-height: 280px;
+}
+
+div#product-card-actions {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+div#product-card-title {
+  position: relative;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+}
+
+div#product-card-title span {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+div#product-card-buttons-line {
+  position: relative;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+}
+
+div#product-card-buttons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div#button {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  background-color: #00ff99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+div#button span {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+}
+
+div#button-del {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+div#button-del span {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+}
+
+div#pop-up-delete-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  z-index: 1002;
+  box-shadow: 0px 0px 5px 0px #ff9900;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+div#button-close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: "Ubuntu";
+  background-color: #ff9900;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+div#card-content {
+  position: relative;
+  width: 280px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+div#card-text {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#card-text-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+div#card-text-title span {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+}
+
+div#card-text-desc {
+  position: relative;
+}
+
+div#card-text-desc span {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+div#card-buttons {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+div#buttons-line {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+div#button-yes {
+  position: relative;
+  width: 110px;
+  height: 40px;
+  background-color: #ff9900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 500ms, color 500ms;
+}
+
+div#button-yes span {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+div#button-yes:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+div#button-not {
+  position: relative;
+  width: 110px;
+  height: 40px;
+  background-color: #ff9900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 500ms;
+}
+
+div#button-not span {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+div#button-not:hover {
+  background-color: #00ff99;
+}
