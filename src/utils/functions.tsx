@@ -28,7 +28,7 @@ export const getLocalStorage = (valueDefault: StateProps) => {
 export const resetAllData = (state: StateProps, setState: Function) => {
   setState({ ...state, page: "home", product: 0, image: "" });
   localStorage.clear();
-  window.location.href = "/ecommerce";
+  window.location.href = "/react-ecommerce-teste";
 };
 
 export const getProducts = (setProducts: Function) => {
