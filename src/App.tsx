@@ -15,7 +15,7 @@ const App = () => {
   }, []);
   //
   return (
-    <Router basename="/ecommerce">
+    <Router basename="/react-ecommerce-teste">
       <Routes>
         <Route
           path="/"
